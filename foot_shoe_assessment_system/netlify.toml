@@ -1,4 +1,4 @@
 [build]
 base = "foot_shoe_assessment_system"
 command = "pnpm install && pnpm build"
-publish = "dist/public"
+publish = "foot_shoe_assessment_system/dist/public"
