@@ -1,0 +1,7 @@
+2026-04-09 browser validation notes
+- Preview URL loaded successfully without initial crash.
+- Start button transitioned to the assessment form.
+- Form renders with default demo values and navigation buttons are visible.
+- Next step is to advance through the assessment flow and validate the PDF download action.
+The form advanced successfully from step 2 to step 3 and then to the results view with default values. The results page rendered recommendation cards and exposed both PDF and Markdown download buttons, so the repaired input normalization has at least prevented the previous crash before the final download action.
+After clicking the PDF download button, the page stayed mounted and no browser console error was emitted. The sandbox Downloads directory remained empty immediately after the click, so the validation supports that the previous runtime crash is gone, although browser-automation-side download capture remains inconclusive and should be spot-checked once in the management preview.
