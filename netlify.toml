@@ -1,7 +1,6 @@
 [build]
-base = "foot_shoe_assessment_system"
-command = "pnpm install && pnpm build"
-publish = "dist"
+command = "cd foot_shoe_assessment_system && pnpm install && pnpm build"
+publish = "foot_shoe_assessment_system/dist/public"
 
 [build.environment]
 NODE_VERSION = "20"
