@@ -1,5 +1,4 @@
 [build]
-base = "足部評価システム"
 command = "pnpm install && pnpm build"
 publish = "dist/public"
 
